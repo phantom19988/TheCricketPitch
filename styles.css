@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;push
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color:  #f1f1f1a8;
+ color: rgb(26,26,26);
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  float: left;
+  color: rgb(26,26,26);
+  margin-left: 20px;
+}
+
+nav {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: rgb(26,26,26);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero */
+.hero {
+    height: 60vh;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #eef2f7;
+
+  background: url(./images/image\ \(6\).jpg) no-repeat;
+  background-size: 100% 100%;
+
+  display: flex;
+  
+}
+
+.hero .content{
+     background-color: #0000008b;
+    
+}
+
+.hero h2 {
+    
+  color: #f1f1f1;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+    
+   color: #f1f1f1;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #007BFF;
+   /* background-color: #eef2f7; */
+   color: #f1f1f1;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  transition: all 0.5s;
+}
+
+.hero .btn:hover {
+  background-color: #f1f1f1;
+  color: #007BFF;
+}
+
+/* Section */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/* Records Section */
+.records {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.records h2 {
+  font-size: 2.5rem;
+  margin-bottom:4rem;
+  text-align: center;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.record-card {
+   background-color: #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+ padding: 1rem;
+  cursor: pointer;
+}
+
+
+.record-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.record-info {
+  padding: var(--spacing-sm);
+}
+
+.record-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+/* News Section */
+.news {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.news h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.news-grid article {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.news-grid img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.news-grid h3 {
+  margin-bottom: 10px;
+}
+
+.news-grid p {
+  font-size: 0.9em;
+}
+
+
+
+/* Reviews */
+.review-box {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid #00b894;
+  border-radius: 5px;
+  box-shadow: 2px 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background-color:  #f1f1f1a8;
+  /* background-color: rgb(26,26,26); */
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  /* color: #f1f1f1a8; */
+  color: rgb(26,26,26);
+}
